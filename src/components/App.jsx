@@ -41,6 +41,7 @@ export class App extends Component {
         this.setState({ allImages: res.hits, page: 1, search: value })
       )
       .catch(error => alert(error.massage));
+    e.target.reset();
   };
 
   loadMore = () => {
